@@ -1,0 +1,223 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa; 
+    color: #222; 
+}
+
+header {
+    background: #0d1b2a; 
+    color: white;
+    padding: 25px;
+    text-align: center; 
+    border-bottom: 4px solid #1b263b;
+}
+
+nav a {
+    color: #e0e1dd;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #778da9;
+}
+
+.hero {
+    background-image: url("Bodybuilder-Working-Out-His-Upper-Body-With-Cable-Crossover-Exercise.webp"); 
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+section {
+    padding: 30px;
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #415a77;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1b263b;
+}
+
+/* Accordion */
+.accordion {
+    background: #415a77;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    background: #e0e1dd;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    iframe, video {
+        width: 100%;
+    }
+}
+#emojiContainer {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.emoji {
+    position: absolute;
+    font-size: 40px;
+    animation: floatUp 1.2s ease-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-120px) scale(1.4);
+    }
+}
+.big-title {
+    animation-name: pulse;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    font-size: 60px;
+    font-weight: bold;
+    transform-origin: center;
+    display: block;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 12px rgb(255, 255, 255);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.centered {
+    text-align: center;
+}
+
+.center-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 560px;
+    box-sizing: border-box;
+}
+
+#exerciseVideo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10000;
+    color: #333;
+    pointer-events: auto;
+    background: none;
+    border: none;
+    padding: 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+*/
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+#closeTips {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
