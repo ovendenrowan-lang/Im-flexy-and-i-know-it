@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workout Routines</title>
+
+    <meta name="description" content="Explore beginner, intermediate, and advanced workout routines to help you build strength and improve fitness.">
+    <meta name="keywords" content="workouts, fitness routines, strength training, gym exercises">
+    <meta name="author" content="Rowan Ovenden">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Workout Routines</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="nutrition.html">Nutrition Tips</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Beginner Full‑Body Workout</h2>
+    <ul>
+        <li><a href="#" onclick="openVideo('body weight squats.mp4')">Bodyweight Squats – 3×12</a></li>
+        <li><a href="#" onclick="openVideo('Press up.mp4')">Push‑Ups – 3×10</a></li>
+        <li><a href="#" onclick="openVideo('Dumbell Rows.mp4')">Dumbbell Rows – 3×12</a></li>
+        <li><a href="#" onclick="openVideo('plank.mp4')">Plank – 3×30 seconds</a></li>
+    </ul>
+</section>
+
+</section>
+
+<section>
+    <h2>Intermediate Push Day</h2>
+    <ul>
+        <li><a href="#" onclick="openVideo('Bench Press.mp4')">Bench Press – 4×8</a></li>
+        <li><a href="#" onclick="openVideo('Shoulder Press.mp4')">Shoulder Press – 4×10</a></li>
+        <li><a href="#" onclick="openVideo('Tricep dips.mp4')">Tricep Dips – 3×12</a></li>
+        <li><a href="#" onclick="openVideo('Lat Raise.mp4')">Lateral Raises – 3×15</a></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Advanced Leg Day</h2>
+    <ul>
+        <li><a href="#" onclick="openVideo('barbell squat.mp4')">Barbell Squats – 5×5</a></li>
+        <li><a href="#" onclick="openVideo('Rdl.mp4')">Romanian Deadlifts – 4×8</a></li>
+        <li><a href="#" onclick="openVideo('Leg Press.mp4')">Leg Press – 4×12</a></li>
+        <li><a href="#" onclick="openVideo('Walking Lunges.mp4')">Walking Lunges – 3×20 steps</a></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Workout Demonstration Video</h2>
+    <video controls width="400">
+        <source src="Full Body.mp4" type="video/mp4">
+    </video>
+</section>
+
+<footer>
+    <p>© Flex Appeal 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <video id="exerciseVideo" controls autoplay width="500">
+            <source id="videoSource" src="" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<div id="tipsModal" class="modal">
+    <div class="modal-content">
+        <span id="closeTips">&times;</span>
+        <h2>How Sets & Reps Work</h2>
+        <p><b>Reps</b> = how many times you perform the exercise.</p>
+        <p><b>Sets</b> = how many rounds of reps you complete.</p>
+        <p>So <b>3×12</b> means: do 12 reps, rest, repeat 3 times.</p>
+        <p>Example: 12 squats → rest → 12 squats → rest → 12 squats.</p>
+    </div>
+</div>
+
+</body>
+</html>
